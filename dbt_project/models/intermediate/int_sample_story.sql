@@ -18,7 +18,7 @@ dim_sample_story AS (
 )
 , final AS (
     SELECT
-        fct_tonies.user_id                      AS user_id
+        fct_sample.user_id                      AS user_id
         , fct_sample.session_id                 AS session_id
         , fct_sample.user_session_id            AS user_session_id
         , fct_sample.play_duration_seconds      AS play_duration_seconds
