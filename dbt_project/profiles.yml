@@ -1,4 +1,4 @@
-dbt_tonies_task:
+dbt_project:
   outputs:
     dev:
       account: *********
