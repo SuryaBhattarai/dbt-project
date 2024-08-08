@@ -1,0 +1,10 @@
+version: 2
+
+models:
+  - name: dim_sample_story
+    description: "This is the dimensional story table.
+    It stores descriptive data and provide context of the story dim table."
+    columns:
+      - name: story_id
+        data_tests:
+          - not_null

@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: raw_sample_data
+    description: "This is the sample raw data from data set"
+    columns:
+      - name: user_id
+        description: "The primary key for this table"
+        data_tests:
+          - not_null
+          

@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: int_sample_story
+    description: "This is the intermediate model."
+    columns:
+      - name: user_session_id
+        description: "The primary key for this table"
+        data_tests:
+          - unique
+          - not_null

@@ -1,0 +1,17 @@
+version: 2
+
+models:
+  - name: ods_sample_data
+    description: "This is the sample operational data storage(Staging layer) from the  dataset.
+     All necessary data transformation and cleaning occur in this layer."
+    columns:
+      - name: user_id
+        description: "Unique identifier for each user."
+        type: "string"
+        data_tests:
+          - not_null
+      - name: session_id
+        description: "Identifier for each session."
+        type: "string"
+        data_tests:
+          - not_null

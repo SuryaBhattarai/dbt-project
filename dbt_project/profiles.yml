@@ -1,0 +1,13 @@
+dbt_tonies_task:
+  outputs:
+    dev:
+      account: *********
+      database: dataset
+      password: *******
+      role: accountadmin
+      schema: *******
+      threads: 4
+      type: snowflake
+      user: *******
+      warehouse: compute_wh
+  target: dev

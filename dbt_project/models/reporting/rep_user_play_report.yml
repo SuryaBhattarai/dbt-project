@@ -1,0 +1,9 @@
+version: 2
+
+models:
+  - name: rep_user_play_report
+    description: "This is the  user play report."
+    columns:
+      - name: user_id
+        data_tests:
+          - not_null

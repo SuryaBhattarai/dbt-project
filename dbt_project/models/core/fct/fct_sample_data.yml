@@ -1,0 +1,12 @@
+version: 2
+
+models:
+  - name: fct_tonies_playback_data
+    description: "This is the fact table which contains a large volume of data.
+        It holds measurable quantitative data and foreign keys, and the data changes frequently."
+    columns:
+      - name: user_session_id
+        description: "The primary key for this table"
+        data_tests:
+          - unique
+          - not_null

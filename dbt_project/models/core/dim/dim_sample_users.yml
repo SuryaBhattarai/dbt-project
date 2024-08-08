@@ -1,0 +1,10 @@
+version: 2
+
+models:
+  - name: dim_sample_users
+    description: "This is the dimensional  users table.
+       It stores descriptive data and provide context of the fact users table."
+    columns:
+      - name: user_id
+        data_tests:
+          - not_null
