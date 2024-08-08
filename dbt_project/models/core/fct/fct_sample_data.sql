@@ -5,9 +5,9 @@
   )
 }}
 
-WITH ods_tonies_playback_data AS(
+WITH ods_sample_data AS(
     SELECT *
-    FROM  {{ ref('ods_tonies_playback_data') }}
+    FROM  {{ ref('ods_sample_data') }}
 )
 
 , final AS (
@@ -19,7 +19,7 @@ SELECT
     , story_id                  AS story_id
     , timestamp_cet             AS timestamp_cet 
 
-FROM  ods_tonies_playback_data
+FROM  ods_sample_data
 )
 
 SELECT * 
